@@ -1,0 +1,179 @@
+2002-06-26  Németh László <nemethl@gyorsposta.hu>
+	* kivetelek/ragozatlan/elejeveleje: idejû, szabadidejû
+	* kivetelek/ragozatlan/rak: rakták, csukták, bökték, lökték, pökték
+	* aff.fonev: briddzsel (és nem bridzzsel), a hibát Bíró Árpád jelezte
+	* egyéb: bájt (helyesen byte), ezren, feküdt
+	* MYSPELL_heading: REP: boxxal->boksszal, boxal->boksszal,
+	boxszal->boksszal, naccsága->nagysága, tejles->teljes
+	(rossz szóösszetétel kiszûréséhez, ld. Magyar Myspell 0.4)
+	* _huhyph: Mayer Gyula <gam@cs.elte.hu> huwords.hyph szólistájának
+	szavait Bíró Árpád <biro_arpad@yahoo.com> dolgozta fel, a huwords.hyph
+	az ftp://clphx.btk.ppke.hu/pub/tex/huhy401.zip állományban található
+	* _huhyph2: feldolgozatlan szavak az elõzõ állományból
+	* _godo2: Godó Ferenc 10000 feldolgozatlan szót tartalmazó listája,
+	ideiglenesen ragozatlanként felvéve (az állomány korábban a
+	levelek/Feri könyvtárban foglalt helyet)
+
+2002-06-14  Trón Viktor <tron@coli.uni-sb.de>
+	* Makefile, ige_gen.awk, igee3_gen.awk, igekoto_filter.awk, igesgen:
+	képzett igék E/3. alanyi múltidejû alakjainak kezelése az igekötõk
+	figyelembevétével, pl. hátráltathatott
+	* levelek/OLVASSEL_CHANGES_TV: leírás
+
+2002-06-14  Bíró Árpád <biro_arpad@yahoo.com>
+	* bin/checkmyspell: nyelvi modulokat ellenõrzõ program
+
+2002-06-14  Khiraly <khiraly123@gmx.net> és mások
+	* bin/dic2txt: Átalakító program. Az OpenOffice.org saját szótárakból
+	nyeri ki a szavakat további feldolgozás céljából.
+
+2002-06-14  Németh László <nemethl@gyorsposta.hu>
+	* MYSPELL_heading: REP: licensz->licenc, licensszel->licenccel,
+	licenszt->licencet
+	* kivetelek/igekotos/hall, illik: csak kötõhangzóval (nincs illne, hallna)
+	* kivetelek/ragozatlan/kell: csak kötõhangzóval (nincs kellne)
+	,,elkellne egy kis pénz'' helyesen ,,elkelne egy kis pénz''
+	* aff.alanyi, aff.targyas: rövid magánhangzó + -t végû igéknél van
+	csak kötõhangzó nélküli többes számú rag feltételes módban
+	pl. irtna, fûtniük nem jó, (javítás a NeloTJT3 makró átírásával)
+	a hibát Bíró Árpád <biro_arpad@yahoo.com> jelezte
+	* kivetelek/igekotos/dt, kivetelek/ragozatlan/dt: -dt végûek ragozva,
+	a hibát Khiraly <khiraly123@gmx.net> jelezte
+	* aff.fonev: -szerûen
+	* egyéb: ynagyszerû, Jamaica, jamaicai, kissé, aludt, a hibákat többen
+	jelezték: Bíró Árpád, Koblinger Egmont <egmont@cs.bme.hu>, 
+	Horváth Árpád <ahorvath@szgti.bmf.hu>, Khiraly <khiraly123@gmx.net>, ...
+
+2002-06-03  Németh László <nemethl@gyorsposta.hu>
+	* Licenc: GPL
+	* MySpell-HU: integráció (6-3 szabály)
+	- y összetett szó jelölõ kapcsoló
+	* MYSPELL_heading: REP: dijját->díját, Beatriksz->Beatrix,
+	daxli->dakszli, kódexxel->kódexszel, Linuxal->Linuxszal
+	- ü/û csere is REP-be, hogy elsõ javaslat legyen
+	* aff.alanyi, aff.targy: vakaróz+j ikes felszólító
+	* aff.fonev:
+	- ászszor->ásszor
+	- sakkképp, sakkképpen, sakkként, sakkkor helyett a helyes alakok
+	- -nyi, -atlan, -> melléknevekhez nem járulnak többé (UVW->klm kapcs.)
+	* _alap/fonev_osszetett: -i-ig ellenõrizve
+	* _alap/fonev_kulon: ma (síma), éj (ünnepéj, szívéjes, stb.),
+	les (tejles, stb.)
+	* _godo/fonev_mely, ige_mely: bõvítés, létrehozás
+	* _alap/ige_tat_kiv: szt végûek mellett egyéb mássalhangzó+t végûek
+	felvétele. A hibát Naszódi Mátyás <naszodi@morphologic.hu> jelezte.
+	* egyéb: anyu, apu
+	* tesztek: tesztek
+	* TODO: tervezett feladatok
+	* Magyar_helysegnevek/OLVASSEL: dokumentáció pótlása
+	
+2002-05-20  Németh László <nemethl@gyorsposta.hu>
+	* _alap/fonev_osszetett: csak olyan összetett szavak lettek
+	leválogatva, amelyek fõnevekbõl, vagy melléknevekbõl állnak,
+	illetve a kétszótagú igekötõvel rendelkezõ fõnevek (pl. összetevés).
+	Plusz bel-, kül- kezdetû szavak.
+	A ,,félidõ'' szóig ellenõrizve, _alap/fonev_morfo* is hiányzik.
+	* MYSPELL_heading: REP: ájj->állj, kargyuk->kardjuk, eccer->egyszer,
+	kölcség->költség, boloncság->bolondság, csug->csukd, erössen->erõsen,
+	szöllõ->szõlõ, hüttõ->hûtõ
+	- i/í után o/ó, u/ú is elõre, hogy elsõ javaslat legyen
+	- COMPOUNDWORD, COMPOUNDSYLLABLE a OOo/MySpell-HU-hoz
+	* aff.fonev: dzsessz-szer, dzsessz-szerû, észszerû, /c kapcsoló
+	A problémát Koblinger Egmont <egmont@cs.bme.hu> jelezte.
+	Az ispell hibája miatt a vas+ár+ú, ész+szer+û ammak ellenére elfogadott,
+	hogy az ár, és a szer nem szerepelhet összetett szavakban. MySpell-ben jó.
+	* fonev_gen.awk: Hárombetûs, két mássalhangzóra végzõdõ tulajdonnevek
+	(Ant, Apc, Ond stb.) hiányoztak, a hibát Trón Viktor jelezte.
+	* _biologia: modulkezdemény pár száz növénynévvel
+	* _foldrajz: földrajz modul, Bíró Árpád <biro_arpad@yahoo.com> munkája.
+	* spellhtml: nem szövegtartalmú elemek (SCRIPT, STYLE, CODE, PRE) lekezelése.
+	A hibát Zsadányi Nagy Csaba <zsadanyi@tarki.hu> jelezte.
+	* egyéb: ünnepek kisbetûvel (húsvét, szilveszter)
+
+2002-05-16  Trón Viktor <tron@coli.uni-sb.de>
+	* kivetelek/igekotos/dt: feledt, köpködt, lépkedt, lopkodt, nyomkodt,
+	okádt, tapodt, tépkedt törölve
+
+2002-05-14  Németh László <nemethl@gyorsposta.hu>
+	* aff.targyas: feddd, mászikd
+	* kivetelek/ragozatlan/nevmasi_hatarozoszok.m4: elétek, tielétek
+	* Makefile: install: /usr/lib/ispell ellenõrzése. A Debian alatt
+	jelentkezõ hibát Horváth Árpád <ahorvath@szgti.bmf.hu> jelezte
+
+2002-05-10  Trón Viktor <tron@coli.uni-sb.de>
+	* _magyar_helysegnevek: több, mint 16000 élõ, és történelmi
+	helységnév, melléknévképzõs alakjaikkal egyetemben
+
+2002-05-10  Németh László <nemethl@gyorsposta.hu>
+	* kémia modul: Bíró Árpád, és az általa fellelt szavak alapján:
+	* _alap/ige_koto: igenévszók (ég, él, öl, ír, hal) pl. elöle=el+öle
+	* _alap/melleknev: - kis -> kísért, kicsiért, Kisért helyes, kisért nem
+	* _alap/ige_ikes_kiv: + -zik végû hagkivetõk (vérzhet, hiányztat)
+	* _alap/ige_targy: + -zik végû hangkivetõ E/3 felszólító (virágozzék)
+	* _alap/fonev_kulon: magyar+ország, török+ország!
+	* egyéb: külön él/különélés, heteseikkel, múlasz, stb.
+	* kivetelek/igekotos/ugrik: ugrotok, ugranak, stb. (Trón Viktor)
+	* _alap/melleknev: késõbb, megfelelõbb (Godó Ferenc)
+	* levelek/chkmispell: Bíró Árpád, részben javítva
+	* _alap/fonev, informatika/fonev: neszkávé, kapucsínó, flopi, bájt
+	* ige_o: vissza a melléknévrag! (Túl sok hibát okozott a hiánya)
+
+2002-04-29  Németh László <nemethl@gyorsposta.hu>
+	* aff.alanyi: befejezett melléknévi igenév külön (igee3_gen.awk), pl. elvetélteket már jó
+	* típushibák: fordulós, Istvánné, kellt
+	szervíz/elitélt/mennyasszony/sálok (ld. _alap/fonev_kulon), 
+	párat, milliós, csiklandanak, sálok, észzel, virslitlen, virsliszer, stb.
+	a hibákat Bíró Árpád, Trón Viktor, Godó Ferenc jelezte
+	* _matematika/, _alap/: mintegy 1000 új szó Bíró Árpádtól
+
+2002-04-17  Németh László <nemethl@gyorsposta.hu>
+	* bin/i2myspell: fix a character conversion bug
+
+2002-04-17  Németh László <nemethl@gyorsposta.hu>
+	* alanyi.aff, targyas.aff, fonev.aff: ikes/iktelen ragozás szétválasztása, ikes hangkivetõs
+	esetek lekezelése (tárgyas magas hangrendû még hiányzik), T/2. alanyi jelen jav.,
+	a nyitótöves szótövek tárgyragja (fût, toronyt, stb.) a hibákat Trón Viktor 
+	<tron@coli.uni-sb.de>, és Bíró Árpád <biro_arpad@yahoo.com>) jelezte
+	* egyéb: edz, baráta, csöndet, örömöt, mézet, másikok, gyomorok, bögölyök, térem, akaszttat, stb.
+	a javított hibák nagy részét Trón Viktor (tron@coli.uni-sb.de) jelezte
+	* _godo/ige_targy: javítás elkezdõdött Bíró Árpád <biro_arpad@yahoo.com> hibalistái alapján
+	* GYIK: kisebb módosítások
+
+2002-03-27  László Németh <nemethl@gyorsposta.hu>
+	* kivetelek/igekotos/edzpedz: revised words
+
+2002-03-08  László Németh <nemethl@gyorsposta.hu>
+	* bin/i2myspell: fix a counting bug, add COMPOUNDMIN, COMPOUNDFLAG
+
+2002-02-21  László Németh <nemethl@gyorsposta.hu>
+	* ige_gen.awk: remove ispell warning (reported by Alex Paterson <alex@tolon.co.uk>)
+
+2002-02-20  László Németh <nemethl@gyorsposta.hu>
+	* affix source: bug fixes, many of them reported by Árpád Bíró
+	* _uj: some new words
+	* _alap: add words (eg. ~600 words from Árpád Bíró <biro_arpad@yahoo.com>)
+	* _matematika: mathematical terminology, ~400 words from Árpád Bíró 
+	* _godo: ~9000 words from Ferenc Godó <godo@trillian.hu>
+
+2002-02-12  László Németh <nemethl@gyorsposta.hu>
+	* bin/i2myspell: add compound_control_flag argument
+
+2002-02-11  László Németh <nemethl@gyorsposta.hu>
+	* bin/i2myspell: Fix MySpell dictionary problem (reported 
+	  by Ferenc Godó <godo@trillian.hu>)
+	* Makefile: modified by György Pásztor <pasztor@linux.gyakg.u-szeged.hu>
+
+2002-01-11  László Németh <nemethl@gyorsposta.hu>
+	* bin/i2myspell: Fix incompatible MySpell affix table problem (reported by Ferenc Godó)
+	* Makefile: Add $(DESTDIR) and $(dir)
+
+2002-01-11  László Németh <nemethl@gyorsposta.hu>
+	* Makefile: fix problem with proper noun
+
+2001-XX-XX  László Németh <nemethl@gyorsposta.hu>
+	* affix source: lots of bug fixes, reported by Tamás Szántó <tszanto@mol.hu>
+	* dictionary: bug fixes, reported by Árpád Bíró <biro_arpad@yahoo.com>
+	* add words: vocabularies based on Jenõ Rejtõ's books (Elveszett 
+	    cirkáló, Szõke ciklon) and newspapers, sent by Tamás Szántó
+	* add words: vocabulary based on SuSE Linux terminology, sent by Marcel Hilzinger
+	* add words: vocabulary based on SuSE Linux books, sent by Egmont Koblinger

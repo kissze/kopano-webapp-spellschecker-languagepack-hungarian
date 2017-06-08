@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>0.1</version>
+		<name>spellchecker-languagepack-hungarian</name>
+		<title>Hungarian (HU) language pack for the HTML Editor spellchecker plugin</title>
+		<author>Kopano</author>
+		<authorURL>http://www.serverside.hu</authorURL>
+		<description>Makes it possible to use Hungarian with the spellchecker in the HTML editor</description>
+	</info>
+	<components>
+		<component>
+			<files>
+				<client>
+				    <clientfile load="source">js/SpellcheckerLanguagepackHungarianPlugin.js</clientfile>
+				    <clientfile load="debug">js/spellchecker-languagepack-hungarian-debug.js</clientfile>
+				    <clientfile load="release">js/spellchecker-languagepack-hungarian.js</clientfile>
+				</client>
+			</files>
+		</component>
+	</components>
+</plugin>
